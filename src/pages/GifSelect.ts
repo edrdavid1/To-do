@@ -1,10 +1,6 @@
 const GIFS = ['/mygif.gif', '/mygif1.gif', '/mygif2.gif', '/mygif3.gif', '/mygif4.gif', '/mygif5.gif', '/mygif6.gif', '/mygif7.gif', '/mygif8.gif', '/mygif9.gif', '/mygif10.gif', '/mygif11.gif', '/mygif12.gif',];
 const ICON_BASE_PATH = '/icon/';
 
-const getActionIconPath = (name: string) => {
-  return ICON_BASE_PATH + name + '.svg';
-};
-
 const GifSelect = () => {
   const container = document.createElement('div');
   container.className = 'gif-select-container';

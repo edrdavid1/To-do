@@ -44,12 +44,25 @@ To get this project up and running, follow these steps:
    cd todo-app # Or wherever your frontend project is located, e.g., if you are already in the root of the frontend project, you don't need to cd.
    ```
 
-2. **Install dependencies (if any, though this project uses vanilla JS/HTML/CSS, you might have Vite or similar for development):**
+2. **Create a `.env` file:**
+   Create a file named `.env` in the root of the `todo-app` directory. This file will store your environment variables.
+
+3. **Configure Environment Variables:**
+   Add the following lines to your `.env` file, replacing the placeholder URLs with your actual backend server URL and Weather API Key:
+   ```
+   VITE_API_URL=http://localhost:3000/api/todos
+   VITE_WEATHER_API_KEY=YOUR_OPENWEATHERMAP_API_KEY
+   VITE_WEATHER_CITY=YOUR_CITY_NAME # e.g., London, Moscow, New York
+   ```
+   *   `VITE_API_URL` is used in `src/api/todos.ts` to connect to your backend.
+   *   `VITE_WEATHER_API_KEY` and `VITE_WEATHER_CITY` are used in `src/components/WeatherPanel.ts` for fetching weather data.
+
+4. **Install dependencies (if any, though this project uses vanilla JS/HTML/CSS, you might have Vite or similar for development):**
    ```bash
    npm install # If you have a package.json
    ```
 
-3. **Run the frontend application (if using a dev server like Vite):**
+5. **Run the frontend application (if using a dev server like Vite):**
    ```bash
    npm run dev
    ```
