@@ -280,7 +280,7 @@ span {
     flex-direction: row;
     height: auto;
     padding: 20px;
-    gap: 40px;
+    gap: 55px;
     min-width: unset;
   }
   .left-panel {
