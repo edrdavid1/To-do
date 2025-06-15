@@ -44,9 +44,11 @@ h1 {
 
 #app {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.67);
+  transform-origin: center;
 }
 
 .logo {
@@ -183,7 +185,7 @@ span {
 .main-layout {
   display: flex;
   height: 100vh;
-  gap: 40px;
+  gap: 80px;
   padding: 24px;
   box-sizing: border-box;
   min-width: 700px;
@@ -270,11 +272,16 @@ span {
 }
 
 @media (max-width: 1024px) {
+  #app {
+    transform: translate(-50%, -50%) scale(0.67);
+    transform-origin: center;
+  }
   .main-layout {
     flex-direction: column;
     height: auto;
-    padding: 16px;
-    gap: 20px;
+    padding: 20px;
+    gap: 40px;
+    min-width: unset;
   }
   .left-panel {
     max-width: 100%;
