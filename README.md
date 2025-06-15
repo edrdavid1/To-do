@@ -92,8 +92,18 @@ To get this project up and running, follow these steps:
 ├── tsconfig.json        # TypeScript configuration
 └── vite.config.ts       # Vite configuration (if applicable)
 ```
+## Screenshots
 
+### 📋 Home page TODO
+![Main Screen](main.png)
+
+### ➕ Add a note
+![Add Todo](add.png)
+
+### 🌆 Gif selection page
+![GIF Panel](gif.png)
 ## Contributing
+
 
 Feel free to fork the repository, open issues, and submit pull requests.
 
