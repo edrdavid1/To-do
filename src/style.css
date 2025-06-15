@@ -271,7 +271,7 @@ span {
   background-color: #535bf2;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 900px) and (max-width: 1200px) {
   #app {
     transform: translate(-50%, -50%) scale(0.5);
     transform-origin: center;
