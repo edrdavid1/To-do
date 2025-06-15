@@ -19,7 +19,7 @@ const DateTimePanel = () => {
   div.style.display = 'flex';
   div.style.flexDirection = 'column';
   div.style.alignItems = 'center';
-  div.style.marginBottom = '20px'; // Добавим отступ снизу, чтобы отделить от погоды
+  div.style.marginBottom = '20px';
 
   const timeElement = document.createElement('div');
   timeElement.id = 'current-time';

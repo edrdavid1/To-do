@@ -3,7 +3,7 @@ const CITY = import.meta.env.VITE_WEATHER_CITY;
 const URL = `https://api.openweathermap.org/data/2.5/weather?q=${CITY}&appid=${API_KEY}&units=metric&lang=ru`;
 
 const getWeatherIconPath = (iconCode: string) => {
-  const basePath = '/weather-icon/'; // Убедитесь, что это правильный путь к вашей папке с иконками
+  const basePath = '/weather-icon/';
   switch (iconCode) {
     case '01d': return basePath + 'clear-day.svg';
     case '01n': return basePath + 'clear-night.svg';

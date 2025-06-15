@@ -2,7 +2,6 @@ const GifPanel = () => {
   const div = document.createElement('div');
   div.className = 'gif-panel';
 
-  // Получаем путь к выбранной гифке из localStorage или используем по умолчанию
   const gifPath = localStorage.getItem('selectedGif') || '/mygif1.gif';
 
   const img = document.createElement('img');
