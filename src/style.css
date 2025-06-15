@@ -271,9 +271,9 @@ span {
   background-color: #535bf2;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   #app {
-    transform: translate(-50%, -50%) scale(0.67);
+    transform: translate(-50%, -50%) scale(0.5);
     transform-origin: center;
   }
   .main-layout {
@@ -284,52 +284,42 @@ span {
     min-width: unset;
   }
   .left-panel {
-    max-width: 100%;
-    padding: 10px;
+    min-width: 280px;
+    max-width: 500px;
   }
   .right-panel {
-    max-width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px;
+    min-width: 220px;
+    max-width: 300px;
   }
   .weather-panel, .gif-panel, .date-time-panel {
-    min-width: 200px;
-    max-width: 300px;
     font-size: 1.5em;
     min-height: 100px;
+    max-height: 300px;
   }
   .todo-list-container {
-    max-width: 100%;
-    padding: 10px;
+    width: 90%;
   }
   li {
-    padding: 10px;
-    margin: 5px 0;
+    padding: 12px;
   }
   span {
     font-size: 1em;
   }
   button {
     font-size: 0.8em;
-    padding: 6px 16px;
   }
   input {
     font-size: 1em;
   }
   .add-todo-container {
-    padding: 15px;
+    width: 90%;
   }
   .add-todo-title {
     font-size: 1.8em;
   }
   .add-todo-input,
-  .add-todo-button,
-  .back-button {
-    font-size: 0.9em;
-    padding: 8px 16px;
+  .add-todo-button {
+    font-size: 1em;
   }
 }
 
