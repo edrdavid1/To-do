@@ -277,7 +277,7 @@ span {
     transform-origin: center;
   }
   .main-layout {
-    flex-direction: column;
+    flex-direction: row;
     height: auto;
     padding: 20px;
     gap: 40px;
@@ -325,8 +325,11 @@ span {
 
 @media (max-width: 700px) {
   .main-layout {
-    padding: 8px;
-    gap: 15px;
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 40px;
+    min-width: unset;
   }
   .left-panel, .right-panel {
     padding: 8px;
