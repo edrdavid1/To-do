@@ -273,47 +273,109 @@ span {
   .main-layout {
     flex-direction: column;
     height: auto;
+    padding: 16px;
+    gap: 20px;
   }
   .left-panel {
     max-width: 100%;
+    padding: 10px;
   }
   .right-panel {
     max-width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
+    padding: 10px;
   }
   .weather-panel, .gif-panel, .date-time-panel {
-    min-width: 250px;
-    max-width: 400px;
+    min-width: 200px;
+    max-width: 300px;
+    font-size: 1.5em;
+    min-height: 100px;
+  }
+  .todo-list-container {
+    max-width: 100%;
+    padding: 10px;
+  }
+  li {
+    padding: 10px;
+    margin: 5px 0;
+  }
+  span {
+    font-size: 1em;
+  }
+  button {
+    font-size: 0.8em;
+    padding: 6px 16px;
+  }
+  input {
+    font-size: 1em;
+  }
+  .add-todo-container {
+    padding: 15px;
+  }
+  .add-todo-title {
+    font-size: 1.8em;
+  }
+  .add-todo-input,
+  .add-todo-button,
+  .back-button {
+    font-size: 0.9em;
+    padding: 8px 16px;
   }
 }
 
 @media (max-width: 700px) {
   .main-layout {
-    padding: 16px;
+    padding: 8px;
+    gap: 15px;
   }
   .left-panel, .right-panel {
-    padding: 16px;
+    padding: 8px;
   }
   .left-panel {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .right-panel {
-    margin-top: 20px;
+    margin-top: 10px;
+    gap: 15px;
   }
   .weather-panel, .gif-panel, .date-time-panel {
     min-width: 100%;
+    font-size: 1.2em;
+    min-height: 80px;
   }
   .todo-list-container > div:first-child {
     flex-direction: column;
     align-items: flex-start;
   }
   .todo-list-container > div:first-child button {
-    margin-top: 10px;
+    margin-top: 5px;
   }
   #addTodoBtn {
     width: 100%;
+  }
+  .add-todo-container {
+    padding: 10px;
+  }
+  .add-todo-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  .add-todo-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .add-todo-input,
+  .add-todo-button {
+    width: 100%;
+    font-size: 0.8em;
+    padding: 6px 12px;
+  }
+  .back-button {
+    font-size: 0.8em;
+    padding: 6px 12px;
   }
 }
 
